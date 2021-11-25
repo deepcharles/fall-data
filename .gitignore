@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Custom
+FallData/*
+FallData.tar.gz
+._FallData
