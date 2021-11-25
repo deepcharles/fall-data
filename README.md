@@ -16,7 +16,7 @@ Alternatively, running in a terminal
 
 > python download_data.py
 
-automatically downloads and extract the data. This code requires Python 3 and `tqdm` (`pip install tqdm`).
+automatically downloads and extracts the data. This code requires Python 3 and `tqdm` (`pip install tqdm`).
 
 Once extracted, the data can be read using the following code snippets (in Python, R). Be sure to execute those lines while in the same directory as the extracted `FallData` folder.
 
