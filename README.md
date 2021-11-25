@@ -12,6 +12,12 @@
 Data can be downloaded as a zipped archive (FallData.tar.gz, ~330MB):
 - [link 1](https://plmbox.math.cnrs.fr/f/a05ad8fbe7674392962b/?dl=1)
 
+Alternatively, running in a terminal
+
+> python download_data.py
+
+automatically downloads and extract the data. This code requires Python 3 and `tqdm` (`pip install tqdm`).
+
 Once extracted, the data can be read using the following code snippets (in Python, R). Be sure to execute those lines while in the same directory as the extracted `FallData` folder.
 
 #### Python
