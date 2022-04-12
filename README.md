@@ -39,10 +39,10 @@ code_list <- fromJSON("code_list.json")
 
 for(code in code_list){
     if (startsWith(code, "u-")){
-        filename <- paste("Unconstrained/", code, sep="")
+        filename <- paste("FallData/Unconstrained/", code, sep="")
     }
     if (startsWith(code, "c-")){
-        filename <- paste("Controlled/", code, sep="")
+        filename <- paste("FallData/Controlled/", code, sep="")
     }
     signal <- read.csv(paste(filename, ".csv", sep=""))
     metadata <- fromJSON(paste(filename, ".json", sep=""))
