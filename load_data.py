@@ -16,7 +16,10 @@ def get_filename(code: str) -> Path:
     Returns:
         Path: filename
     """
-    filename = DATA_HOME / code
+    if code.startswith("u-"):
+        filename = DATA_HOME / "Unconstrained" / code
+    elif code.startswith("c-"):
+        filename = DATA_HOME / "Controlled" / code
     err_msg = f"The code {code} cannot be found in the data set."
     assert filename.with_suffix(".csv").exists(), err_msg
     return filename
