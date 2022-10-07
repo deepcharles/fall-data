@@ -20,8 +20,11 @@ def get_filename(code: str) -> Path:
         filename = DATA_HOME / "Unconstrained" / code
     elif code.startswith("c-"):
         filename = DATA_HOME / "Controlled" / code
+    elif code.startswith("cnf-"):
+        filename = DATA_HOME / "ControlledNoFall" / code
     err_msg = f"The code {code} cannot be found in the data set."
     assert filename.with_suffix(".csv").exists(), err_msg
+    assert filename.with_suffix(".json").exists(), err_msg
     return filename
 
 
