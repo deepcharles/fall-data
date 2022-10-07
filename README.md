@@ -44,6 +44,9 @@ for(code in code_list){
     if (startsWith(code, "c-")){
         filename <- paste("FallData/Controlled/", code, sep="")
     }
+    if (startsWith(code, "cnf-")){
+        filename <- paste("FallData/ControlledNoFall/", code, sep="")
+    }
     signal <- read.csv(paste(filename, ".csv", sep=""))
     metadata <- fromJSON(paste(filename, ".json", sep=""))
     # Do something.
