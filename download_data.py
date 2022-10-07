@@ -35,7 +35,9 @@ class TqdmUpTo(tqdm):
 def download_data() -> None:
     """Download the data, extract them and remove the archive."""
     if DATA_HOME.exists():
-        print(f"Data already exist ({DATA_HOME}).")
+        print(
+            f"Data already exist ({DATA_HOME}). Remove this folder to download again."
+        )
     else:
         print("Data are missing. Downloading them now...", end="", flush=True)
         with TqdmUpTo(
