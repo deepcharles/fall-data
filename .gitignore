@@ -133,3 +133,7 @@ dmypy.json
 FallData/*
 FallData.tar.gz
 ._FallData
+.Rproj.user
+.Rhistory
+.DS_Store
+fall-data.Rproj
